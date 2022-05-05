@@ -1,0 +1,17 @@
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+/* Border box */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    }
+
+body {
+    background-color: white
+
+    }
+
+    

@@ -1,10 +1,12 @@
 /* Font  */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
 /* Border box */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -18,7 +20,7 @@ body {
     height: 100px;
     margin-left: 80px;
     text-align: center;
-    
+
 }
 
 .title {
@@ -34,5 +36,55 @@ body {
 
 .title2 {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria;
+    font-weight: bold;
 }
+
+/* Corpo Centrale */
+
+/* Colonna 1 */
+.colonna1 {
+    position: absolute;
+    left: 15%
+}
+
+/* Cards */
+.cards {
+    width: 400px;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px
+}
+
+/* Immagini */
+.pics {
+    float: left;
+}
+
+/* Contenitore testo card */
+.testo-c {
+    position: absolute;
+    left: 150px
+}
+
+
+.names {
+    color: white;
+    font-family: 'Koulen', cursive;
+    font-size: 30px;
+
+}
+
+.profession {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.email {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+    color: rgb(14, 73, 236);
+    background-color: transparent;
+    text-decoration: none;

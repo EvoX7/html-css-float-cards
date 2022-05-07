@@ -17,6 +17,13 @@ body {
   width: 1200px;
 }
 
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .headertitle {
   position: relative;
   width: 1200px;
@@ -36,39 +43,38 @@ body {
   transform: translate (-50%, -50%);
 }
 
+/* Sottotitolo  */
 .title2 {
   font-size: 15px;
   font-family: Cambria;
   font-weight: bold;
 }
 
-/* Corpo Centrale */
+/* Container colonne */
+
+.container-colonne {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
 
 /* Colonna 1 */
-.colonna1:after {
-  clear: both;
-  content: "";
-  display: table;
-  float: left;
-  width: 25%;
+.colonna1 {
+ display: inline-block;
 }
 
 /* Colonna 2 */
-.colonna2:after {
-  clear: both;
-  content: "";
-  display: table;
-  float: left;
-  width: 50%;
+.colonna2 {
+  display: inline-block;
+ 
 }
 
 /* Colonna 3 */
-.colonna3:after {
-  clear: both;
-  content: "";
-  display: table;
-  float: left;
-  width: 25%;
+.colonna3 {
+  display: inline-block;
+ 
+
 }
 
 /* Cards generale */
@@ -77,7 +83,6 @@ body {
   height: 120px;
   background-color: rgb(15, 15, 15);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px lightblue;
 }
 
 /* Cards specifiche */
@@ -85,13 +90,13 @@ body {
 /* Immagini */
 .pics {
   float: left;
+  width: 120px;
 }
 
 /* Contenitore testo card */
 .testo-c {
-  display: inline-block;
-  position: absolute;
-  left: 140px;
+  position: relative;
+  left: 20px;
 }
 
 .names {
